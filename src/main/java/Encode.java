@@ -36,5 +36,8 @@ public class Encode {
         }
         return encodeMessage;
     }
+    public String getEncodeMessage() {
+        return encodeMessage;
+    }
 
 }
