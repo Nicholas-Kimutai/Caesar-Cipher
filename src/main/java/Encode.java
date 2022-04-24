@@ -21,8 +21,20 @@ public class Encode {
 
                     }
                 }
+                // For lowercase letters
+                else if(Character.isLowerCase(alphabet)){
+                    char newAlphabet=(char)(alphabet+key);
+                    if(newAlphabet>'z'){
+                        encodeMessage += (char)(alphabet -(26-key));
+                    }else{
+                        encodeMessage += newAlphabet;
+                    }
+                }
+            }else{
+                encodeMessage += alphabet;
             }
         }
         return encodeMessage;
     }
+
 }
