@@ -35,6 +35,8 @@ public class Decode {
         }
         return decodeMessage;
     }
-
+    public String getDecodeMessage() {
+        return decodeMessage;
+    }
 
 }
