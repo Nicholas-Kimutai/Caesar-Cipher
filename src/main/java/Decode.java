@@ -7,7 +7,7 @@ public class Decode {
 
         if(key < 1 || key > 25) throw new Exception("The key must be between 1 and 25");
         for(int i=0; i<encodeMessage.length(); i++){
-            char alphabet=encodeMessage.charAt(i);
+            char alphabet=decodeMessage.charAt(i);
             //check if alphabet is a valid letter
             if(Character.isLetter(alphabet)){
                 //For Uppercase letters

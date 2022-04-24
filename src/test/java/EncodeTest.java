@@ -14,4 +14,5 @@ public class EncodeTest {
         assertTrue(actual instanceof String);
 
     }
+
 }
