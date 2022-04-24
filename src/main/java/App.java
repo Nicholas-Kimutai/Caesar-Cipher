@@ -11,12 +11,10 @@ public class App {
 
         System.out.println("Welcome to Ceasar Cipher program!\n");
         System.out.println("Select your functionality:");
-        System.out.println("1.Encoding\n2.Decoding");
+        System.out.println("1.Encoding\n2.Decoding\n");
         Scanner newScanner =new Scanner(System.in);
-        int choice = newScanner.nextInt();
-
-    }
-
-
+        int selection = newScanner.nextInt();
 }
+}
+
 
