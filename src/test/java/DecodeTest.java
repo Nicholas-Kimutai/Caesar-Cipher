@@ -7,4 +7,17 @@ public class DecodeTest {
         Decode decode = new Decode();
         assertNotNull(decode);
     }
+
+    @Test
+    public void  decode_boundaryLength_exception(){
+        try {
+            Decode decode = new Decode();
+            String actual = decode.decoding("YOU WILL NEVER WALK ALONE WHEN YOU HGOT",27);
+
+        }catch (Exception ex){
+            assertEquals("The key must be between 1 and 25",ex.getMessage());
+        }
+
+    }
+
 }
