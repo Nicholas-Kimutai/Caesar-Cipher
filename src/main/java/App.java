@@ -15,6 +15,7 @@ public class App {
         Scanner newScanner = new Scanner(System.in);
         int selection = newScanner.nextInt();
 
+        //Encoding UI
         if(selection==1){
             System.out.println("Encoding");
             newScanner.nextLine();
@@ -35,6 +36,7 @@ public class App {
 
             }
         }
+        // decoding UI
         else if(selection==2){
             System.out.println("Decoding");
             newScanner.nextLine();
@@ -56,6 +58,8 @@ public class App {
             }
 
         }
+
+        //Invalid selection
         else{
             System.out.println("Invalid inputs!");
         }
