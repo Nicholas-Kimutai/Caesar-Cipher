@@ -16,6 +16,13 @@ public class EncodeTest {
     }
 
     @Test
+    public  void  encode_notNull_Exception() throws Exception {
+        Encode encode = new Encode();
+        String  actual = encode.encoding("AB",1);
+        assertNotNull(actual);
+    }
+
+    @Test
     public void  encode_keyBoundaryLength_exception(){
         try {
             Encode encode = new Encode();

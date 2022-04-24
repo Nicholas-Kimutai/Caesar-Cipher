@@ -9,6 +9,13 @@ public class DecodeTest {
     }
 
     @Test
+    public  void  decode_onlyString_Exception(){
+        Decode decode = new Decode();
+        decode.getDecodeMessage();
+        assertTrue(decode.getDecodeMessage() instanceof String );
+    }
+
+    @Test
     public void  decode_boundaryLength_exception(){
         try {
             Decode decode = new Decode();
